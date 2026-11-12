@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RuangRintis - Ruang Kerja Bersama</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <header id="header-section" data-role="CEO">
+  <div class="container header-inner">
+    <a href="#hero-section" class="brand">RuangRintis</a>
+    <nav>
+      <a href="#hero-section">Beranda</a>
+      <a href="#catalog-section">Katalog</a>
+      <a href="#calc-section">Kalkulator</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+
+  <!-- ========== PM 1 (Daniella): HERO ========== -->
+  <section id="hero-section" data-role="PM">
+    <div class="container hero-inner">
+      <h1>RuangRintis: ruang kerja dan ruang rapat untuk tim rintisan.</h1>
+      <p class="subtitle">RuangRintis menyewakan meja kerja bersama dan ruang rapat yang nyaman, sehingga tim rintisan bisa bekerja produktif tanpa biaya kantor sendiri.</p>
+      <ul class="benefits">
+        <li><strong>Sewa fleksibel.</strong> Pilih meja, ruang tim, atau aula untuk berapa hari saja.</li>
+        <li><strong>Fasilitas lengkap.</strong> Wi-Fi cepat, listrik, dan proyektor tersedia sesuai paket.</li>
+        <li><strong>Harga terjangkau.</strong> Mulai Rp50.000 per hari, diskon 10% untuk sewa minimal 3 hari.</li>
+      </ul>
+      <a href="#calc-section" class="btn-cta">Hitung biaya sewa</a>
+    </div>
+  </section>
+
+  <!-- ========== PM 2 (Naila): KATALOG ========== -->
+  <section id="catalog-section" data-role="PM">
+    <div class="container">
+      <h2>Pilih ruang yang sesuai</h2>
+      <p class="section-desc">Gunakan kode promo <strong>BISDIG</strong> untuk diskon 10%.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Paket Meja Harian Individu</h3>
+          <p class="price">Rp50.000 per hari</p>
+          <p>Satu meja kerja di area bersama dengan Wi-Fi cepat, colokan listrik, dan akses air minum. Cocok untuk pekerja lepas atau pendiri tunggal.</p>
+          <p class="promo">Kode promo: BISDIG (diskon 10%)</p>
+        </article>
+        <article class="card featured">
+          <h3>Paket Ruang Tim Kecil</h3>
+          <p class="price">Rp250.000 per hari</p>
+          <p>Ruang tertutup untuk 4 sampai 8 orang dengan papan tulis, TV layar lebar, dan Wi-Fi. Cocok untuk rapat dan kerja tim.</p>
+          <p class="promo">Kode promo: BISDIG (diskon 10%)</p>
+        </article>
+        <article class="card">
+          <h3>Paket Aula Presentasi</h3>
+          <p class="price">Rp750.000 per hari</p>
+          <p>Aula untuk 30 sampai 50 orang dengan proyektor, sound system, dan mikrofon. Cocok untuk presentasi investor atau pelatihan.</p>
+          <p class="promo">Kode promo: BISDIG (diskon 10%)</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SE (Yasmin): KALKULATOR ========== -->
+  <section id="calc-section" data-role="SE">
+    <div class="container">
+      <h2>Kalkulator biaya sewa</h2>
+      <p class="section-desc">Diskon 10% berlaku jika memakai kode BISDIG atau menyewa minimal 3 hari.</p>
+      <div class="calc-box">
+        <label for="paket">Pilih paket ruang</label>
+        <select id="paket">
+          <option value="50000">Paket Meja Harian Individu - Rp50.000</option>
+          <option value="250000">Paket Ruang Tim Kecil - Rp250.000</option>
+          <option value="750000">Paket Aula Presentasi - Rp750.000</option>
+        </select>
+
+        <label for="jumlah">Durasi peminjaman (hari)</label>
+        <input type="number" id="jumlah" min="1" value="1">
+
+        <label for="promo">Kode promo (opsional)</label>
+        <input type="text" id="promo" placeholder="Contoh: BISDIG">
+
+        <button type="button" id="btn-hitung" onclick="hitungTotal()">Hitung total</button>
+
+        <div id="hasil">Isi formulir lalu tekan "Hitung total".</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+ <footer id="footer-section" data-role="CEO">
+  <div class="container">
+    <p>&copy; 2026 RuangRintis. Hak cipta dilindungi.</p>
+    <p>WebDev B - Kelompok 4</p>
+    <p>Tim:</p>
+    <p>Faiqah Putri Alma (CEO)</p>
+    <p>Daniella Ghina Kurnia dan Naila Apriliani Putri (Product Manager)</p>
+    <p>Nadia Sara dan Kanaya Aulia Azahra (UI/UX Designer)</p>
+    <p>Yasmin Athira (Software Engineer)</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
